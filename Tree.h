@@ -42,7 +42,7 @@ class Tree
             if(!vertexIsEmpty(pos))
             {
                 visitInOrder(pos * 2); //left
-                cout << vec[pos].getElement() << "    ";
+                cout << vec[pos].getElement() << "\t";
                 visitInOrder(pos * 2 + 1); //right
             }
         }
@@ -51,7 +51,7 @@ class Tree
         {
             if(!vertexIsEmpty(pos))
             {
-                cout << vec[pos].getElement() << "    ";
+                cout << vec[pos].getElement() << "\t ";
                 visitPreOrder(pos * 2);
                 visitPreOrder(pos * 2 + 1);
             }
